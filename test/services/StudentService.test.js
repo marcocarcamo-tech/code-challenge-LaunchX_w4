@@ -34,4 +34,11 @@ describe("Unit test for ExplorerService", ()=>{
               }
         ]);
     });
+    test("2. Get emails by certification status", ()=>{
+        const students = [{email: "Todd@visualpartnership.xyz", haveCertification: true}];
+    
+        const studentsEmail = StudentService.getEmailByCertificationStatus(students);
+    
+        expect(studentsEmail).toMatchObject(["Todd@visualpartnership.xyz"]);
+    });
 });
