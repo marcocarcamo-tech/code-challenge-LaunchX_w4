@@ -34,11 +34,18 @@ describe("Unit test for ExplorerService", ()=>{
               }
         ]);
     });
-    test("2. Get emails by certification status", ()=>{
+    test("2. Get students emails by certification status", ()=>{
         const students = [{email: "Todd@visualpartnership.xyz", haveCertification: true}];
     
         const studentsEmail = StudentService.getEmailByCertificationStatus(students);
     
         expect(studentsEmail).toMatchObject(["Todd@visualpartnership.xyz"]);
+    });
+    test("2. Get students by credits validation", ()=>{
+        const students = [{credits: 508}, {credits: 499}];
+    
+        const studentsHighCredits = StudentService.getStudentsHighCredits(students);
+    
+        expect(studentsHighCredits).toMatchObject([{credits: 508}]);
     });
 });
