@@ -41,10 +41,10 @@ describe("Unit test for ExplorerService", ()=>{
     
         expect(studentsEmail).toMatchObject(["Todd@visualpartnership.xyz"]);
     });
-    test("2. Get students by credits validation", ()=>{
+    test("3. Get students by credits validation", ()=>{
         const students = [{credits: 508}, {credits: 499}];
     
-        const studentsHighCredits = StudentService.getStudentsHighCredits(students);
+        const studentsHighCredits = StudentService.getStudentsByHighCredits(students);
     
         expect(studentsHighCredits).toMatchObject([{credits: 508}]);
     });
