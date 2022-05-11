@@ -6,5 +6,11 @@ describe("Unit test for StudentController", ()=>{
     
         expect(students[0].name).toBe("Warren");
     });
+    test("2. Get students emails by positive certification status", ()=>{
+        
+        const certifiedStudentsEmail = StudentController.getEmailByCertification();
+    
+        expect(certifiedStudentsEmail[0].name).toBe("Warren");
+    });
     
 });
