@@ -1,11 +1,10 @@
 const StudentController = require("../../lib/controllers/StudentController");
-describe("Unit test for ExplorerController", ()=>{
+describe("Unit test for StudentController", ()=>{
     test("1. Get list of students", ()=>{
 
-        const studentList = [{name: "Warren"},{name: "Lucinda"}]
-        const students = ExplorerController.getStudentsInfo(studentList);
+        const students = StudentController.getStudentsInfo();
     
-        expect(students).toMatchObject({name: "Warren"},{name: "Lucinda"});
+        expect(students[0].name).toBe("Warren");
     });
     
 });
