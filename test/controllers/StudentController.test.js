@@ -22,12 +22,12 @@ describe("Unit test for StudentController", ()=>{
             email: "Todd@visualpartnership.xyz",
             credits: 508,
             enrollments: [
-              "Visual Thinking Intermedio",
-              "Visual Thinking Avanzado"
+                "Visual Thinking Intermedio",
+                "Visual Thinking Avanzado"
             ],
             previousCourses: 1,
             haveCertification: true
-          });
+        });
     });
 
     

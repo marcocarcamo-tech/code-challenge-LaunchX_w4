@@ -6,15 +6,15 @@ describe("Unit test for ExplorerService", ()=>{
             {
                 id: "6264d5d89f1df827eb84bb23",
                 name: "Warren", 
-              },
-              {
+            },
+            {
                 id: "6264d5d85cf81c496446b67f",
                 name: "Lucinda",
-              },
-              {
+            },
+            {
                 id: "6264d5d8cda17de0d2e9f236",
                 name: "Fuentes",
-              }
+            }
         ];
     
         const studentsList = StudentService.getStudentsInfo(students);
@@ -23,15 +23,15 @@ describe("Unit test for ExplorerService", ()=>{
             {
                 id: "6264d5d89f1df827eb84bb23",
                 name: "Warren", 
-              },
-              {
+            },
+            {
                 id: "6264d5d85cf81c496446b67f",
                 name: "Lucinda",
-              },
-              {
+            },
+            {
                 id: "6264d5d8cda17de0d2e9f236",
                 name: "Fuentes",
-              }
+            }
         ]);
     });
     test("2. Get students emails by certification status", ()=>{
