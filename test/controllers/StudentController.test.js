@@ -10,7 +10,7 @@ describe("Unit test for StudentController", ()=>{
         
         const certifiedStudentsEmail = StudentController.getEmailByCertification();
     
-        expect(certifiedStudentsEmail[0].name).toBe("Warren");
+        expect(certifiedStudentsEmail[0]).toBe("Todd@visualpartnership.xyz");
     });
     
 });
